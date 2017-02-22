@@ -1,0 +1,31 @@
+html,body{
+  height:100%;
+  
+}
+body{
+  background-color:lightgrey;
+}
+.main{
+  margin:10px 10px;
+  padding:40px 40px;
+}
+.add{
+  width:60px;
+  height:60px;
+  border-radius:30px;
+  font-size:30px;
+  background-color:red;
+  position:absolute;
+  right:40px;
+  color:white;
+}
+.hidden{
+  position:absolute;
+  right:120px;
+  top:65px;
+  background-color:grey;
+  padding:5px 10px;
+  border-radius:50px;
+  color:white;
+  display:hidden;
+}
