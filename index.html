@@ -1,6 +1,47 @@
-<meta name="viewport" width="device-width" intial-scale="1.0">
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>#StickNotes</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
 
-<div class="well main">
-  <button class="add btn">+</button>
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <meta name="viewport" width="device-width" intial-scale="1.0">
+
+<div class="well" id="main">
+  
+  <button class="add btn" v-on:click="newNote()">+</button>
   <div class="hidden">Add a new note</div>
+  
+  <div class="note" draggable="true">
+    <button class="btn delete" v-on:click="deleteNote($index)">X</button>    
+    <div class="title"><textarea type="text" placeholder="Title goes here" v-model="note.title"></textarea></div>
+    <br>
+  <div class="message"><textarea type="text" placeholder="Your text goes here" v-model="note.message"></textarea></div>
+  
+    <button class="btn save text-center" v-on:click="updateNote()">Save</button>
+  </div><br/>
+
+  <div class="mynotes" v-for="note in notes">
+    <button class="btn delete" v-on:click="deleteNote($index)">X</button>    
+    <div class="title"><textarea type="text" placeholder="Title goes here">{{note.title}}</textarea></div>
+    <br>
+  <div class="message"><textarea type="text" placeholder="Your text goes here">{{note.message}}</textarea></div>
+  
+    <button class="btn save text-center" v-on:click="updateNote($index)">Save</button>
+  </div><br><br>
+  
 </div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>
