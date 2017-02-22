@@ -5,27 +5,86 @@ html,body{
 body{
   background-color:lightgrey;
 }
-.main{
-  margin:10px 10px;
+#main{
+  margin:100px 10px;
   padding:40px 40px;
 }
 .add{
   width:60px;
   height:60px;
   border-radius:30px;
-  font-size:30px;
-  background-color:red;
-  position:absolute;
+  font-size:35px;
+  background-color: #3498db;
+  position:fixed;
   right:40px;
+  top:40px;
   color:white;
+  display:block;
 }
 .hidden{
-  position:absolute;
+  position:fixed;
   right:120px;
-  top:65px;
+  top:50px;
   background-color:grey;
   padding:5px 10px;
   border-radius:50px;
   color:white;
-  display:hidden;
+  display:;
+}
+.add :hover{
+  
+}
+.note,.mynotes{
+  width:300px;
+  height:;
+  background-color:yellow;
+  border:2px solid yellow;
+  box-shadow:6px 10px 5px grey;
+  
+}
+.mynotes{
+  margin-bottom:20px;
+}
+input{
+  width:295px;
+  padding:0px 10px;
+  margin:0px;
+  background-color:yellow;
+  border:none;  
+}
+.title textarea{
+  min-height:30px;
+  max-height:30px;
+  min-width:290px;
+  border:none;
+  margin:0px 5px;
+  border-bottom:0.5px  #f1c40f   solid;
+  background-color:yellow;
+}
+.message textarea{
+  min-height:200px;
+  width:290px;
+  margin:0px 5px;
+  position:relative;
+  word-wrap:break-word;
+  background-color:yellow;
+  border:none;
+  color:;
+}
+.delete{
+  width:30px;
+  height:30px;
+  padding:1px;
+  border-radius:15px;
+  background-color:yellow;
+  color:red;
+  float:right;
+  margin:5px;
+}
+.save{
+  background-color: #b9770e ;
+  margin:auto;
+  position:relative;
+  left:115px;
+  color:white;
 }
