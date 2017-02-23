@@ -4,22 +4,36 @@ new Vue({
     note:{"title":"","message":""},
     notes:[]
   },
-  ready:function(){},
+  ready:function(){
+    console.log("ready");
+    //console.log(this.notes.length);
+    /*
+    if(this.notes.length<=0)
+      {
+        $(".empty").css("display","block");
+      }
+    else
+      {
+        $(".empty").css("display","none");
+      }
+      */
+  },
   methods:{
     newNote:function(){
-      
-      this.notes.unshift(this.note);
+      console.log("new note");
+      this.notes.push(this.note);
       this.note={"title":"","message":""};
     },
     updateNote:function(index){
+      console.log("update note");
       this.notes[index].title=this.note.title;
       this.notes[index].message=this.note.message;
     },
-    deleteNote:function(index){
-      if(confirm("Are you sure you want to delete this Note ?"))
-        {
-          this.notes.$remove(index);
-        }
+    deleteNote:function(index){      
+          //this.notes.$remove(index);
+      console.log(index);
+      this.notes.splice(index,1);
+      
     }
   }
 });
