@@ -9,17 +9,34 @@ body{
   margin:100px 10px;
   padding:40px 40px;
 }
+.empty{
+  display:;
+  position:absolute;
+  left:0;
+  right:0;
+}
+h1{
+  color:grey;
+  font-size:10vh;
+}
 .add{
   width:60px;
   height:60px;
   border-radius:30px;
-  font-size:35px;
+  font-size:30px;
   background-color: #3498db;
   position:fixed;
   right:40px;
   top:40px;
   color:white;
-  display:block;
+  display:block;  
+  box-shadow: 0 9px 5px #999;
+  z-index:5;
+}
+.add:active{
+  box-shadow:0 5px 5px #666;
+  transform: translateY(4px);
+  
 }
 .hidden{
   position:fixed;
@@ -30,6 +47,7 @@ body{
   border-radius:50px;
   color:white;
   display:;
+  z-index:5;
 }
 .add :hover{
   
@@ -85,6 +103,6 @@ input{
   background-color: #b9770e ;
   margin:auto;
   position:relative;
-  left:115px;
+  left:110px;
   color:white;
 }
