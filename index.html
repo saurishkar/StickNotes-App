@@ -17,29 +17,32 @@
 
 <div class="well" id="main">
   
-  <button class="add btn" v-on:click="newNote()">+</button>
+  <a href="#"><div class="add btn" v-on:click="newNote()"><b>+</b></div></a>
   <div class="hidden">Add a new note</div>
   
-  <div class="note" draggable="true">
-    <button class="btn delete" v-on:click="deleteNote($index)">X</button>    
-    <div class="title"><textarea type="text" placeholder="Title goes here" v-model="note.title"></textarea></div>
-    <br>
-  <div class="message"><textarea type="text" placeholder="Your text goes here" v-model="note.message"></textarea></div>
+  <!-- To display message when there are no notes -->
   
-    <button class="btn save text-center" v-on:click="updateNote()">Save</button>
-  </div><br/>
-
-  <div class="mynotes" v-for="note in notes">
-    <button class="btn delete" v-on:click="deleteNote($index)">X</button>    
+  <div class="empty text-center">
+    <h1> You<span style="color:maroon"> haven't</span> saved any Notes<br><br> Get <span style="color:#28b463">Started</span> by clicking on the <span style="color:#3498db"><b>+</b></span> sign </h1>
+  </div>
+  <!-- To display the notes-->
+  
+  <div class="row">
+    <div class="col-sm-3" v-for="(note,index) in notes">
+  <div class="mynotes" >
+    <button class="btn delete" v-on:click="deleteNote(index)">X</button>    
     <div class="title"><textarea type="text" placeholder="Title goes here">{{note.title}}</textarea></div>
     <br>
   <div class="message"><textarea type="text" placeholder="Your text goes here">{{note.message}}</textarea></div>
   
-    <button class="btn save text-center" v-on:click="updateNote($index)">Save</button>
+    <button class="btn save text-center" v-on:click="updateNote(index)">Save</button>
   </div><br><br>
+    </div>
+    </div>
   
 </div>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
 
     <script src="js/index.js"></script>
 
