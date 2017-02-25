@@ -9,7 +9,7 @@ That means the notes you create will only be present as long as the browser sess
 
 Once the browser window is closed or refreshed the interface is back to square one.
 
-This is just to ensure the working and methodology of the web app.
+This is just to ensure the working and methodology of the Front-end portion of the web app.
 
 This app has been developed under the Vue.js framework.
 
