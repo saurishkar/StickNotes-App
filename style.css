@@ -3,25 +3,50 @@ html,body{
   
 }
 body{
-  background-color:lightgrey;
+  background-color:#34495e;
+  background-image:url("https://s6.postimg.org/hfe03e5i9/doodle_wallpaper_1.jpg");
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+}
+.me{
+  position:absolute;
+  height:50px;
+  width:250px;
+  background-color:  #2ecc71  ;
+  transform:rotate(-90deg);
+  left:-100px;
+  top:100px;
+  font-size:17px;
+  font-family:"Oswald";
+  padding:10px 10px;
+  border-radius:5px 5px 50px 50px;
+  color:white;
 }
 #main{
   margin:100px 10px;
   padding:40px 40px;
 }
 .empty{
-  display:;
+  display:block;
   position:absolute;
   left:0;
   right:0;
+  top:300px;
+  
+}
+.hide{
+  display:none;
 }
 h1{
-  color:grey;
-  font-size:10vh;
+  color:white;
+  font-size:5vw;
+  z-index:0;
 }
 .add{
   width:60px;
   height:60px;
+  
   border-radius:30px;
   font-size:30px;
   background-color: #3498db;
@@ -30,11 +55,11 @@ h1{
   top:40px;
   color:white;
   display:block;  
-  box-shadow: 0 9px 5px #999;
+  box-shadow: 0 6px 5px   #cacfd2  ;
   z-index:5;
 }
 .add:active{
-  box-shadow:0 5px 5px #666;
+  box-shadow:0 5px 5px  #1f618d ;
   transform: translateY(4px);
   
 }
@@ -42,40 +67,43 @@ h1{
   position:fixed;
   right:120px;
   top:50px;
-  background-color:grey;
+  background-color: #f1948a ;
   padding:5px 10px;
   border-radius:50px;
-  color:white;
+  color:black;
   display:;
   z-index:5;
-}
-.add :hover{
   
 }
-.note,.mynotes{
+.triangle{
+  position:fixed;
+  z-index:5;
+  width:0;
+  height:0;
+  border-left:10px solid  #f1948a ;
+  border-right:10px solid transparent;
+  border-top:10px solid transparent;
+  border-bottom:10px solid transparent;  
+  right:104px;
+  top:57px;
+}
+.mynotes{
   width:300px;
   height:;
   background-color:yellow;
   border:2px solid yellow;
-  box-shadow:6px 10px 5px grey;
-  
+  box-shadow:6px 10px 15px  #2e4053 ;
+  z-index:3;
+  position:relative;
+  margin-bottom:20px;  
 }
-.mynotes{
-  margin-bottom:20px;
-}
-input{
-  width:295px;
-  padding:0px 10px;
-  margin:0px;
-  background-color:yellow;
-  border:none;  
-}
+
 .title textarea{
   min-height:30px;
   max-height:30px;
   min-width:290px;
   border:none;
-  margin:0px 5px;
+  margin:25px 5px 0px 5px;
   border-bottom:0.5px  #f1c40f   solid;
   background-color:yellow;
 }
@@ -105,4 +133,15 @@ input{
   position:relative;
   left:110px;
   color:white;
+}
+.tape{
+  position:absolute;
+  border:2px solid orange;
+  width:50px;
+  height:100px;
+  top:-50px;
+  left:110px;
+  background-color:orange;
+  transform:rotate(-4deg);
+  
 }
