@@ -1,5 +1,5 @@
 # StickNotes-App
-A  Web app for your taking notes.
+A  Web app for taking notes.
 
 Hi There Folks !!
 I am Saurish Kar and this is a small project of creating text only notes web app.
