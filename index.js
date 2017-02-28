@@ -48,8 +48,8 @@
       this.notes.splice(index,1);
       confirm("This note has been archived !!");
       //console.log("archived");
-      console.log(this.archived);
-      console.log(this.notes);
+      console.log(this.archived); //archived notes
+      console.log(this.notes); // active notes
     }
   }
 });
