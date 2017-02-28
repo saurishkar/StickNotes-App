@@ -5,6 +5,7 @@ Hi There Folks !!
 I am Saurish Kar and this is a small project of creating text only notes web app.
 
 IMPORTANT DISCLAIMER !! 
+
 This is only a Front End App that does not use any database queries or concepts to store user data on backend.
 The data that has been fed stays as long as the browser session is open. Once the session is refreshed, the app gets back to starting point and all the content is gone !!
 
