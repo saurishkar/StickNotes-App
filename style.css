@@ -11,18 +11,49 @@ body{
   background-position:center;
   background-size:100% 100%;
 }
-.me{
-  position:absolute;
+.nav{
   height:50px;
+  position:fixed;
+  z-index:4;
+  width:100%;
+  top:0;
+  color:orange;
+  background-color: #1b2631 ;
+}
+.nav ul{
+  list-style-type:none;
+  margin:15px;
+}
+.nav ul li{
+  display:inline;
+  margin:10px;
+  padding:10px;
+}
+.nav h2{
+  margin:13px 0px;
+  font-family:"Oswald";
+  margin-left:1vw;
+}
+.nav a{
+  text-decoration:none;
+  transition:color 2s ease;
+  -webkit-transition:color 0.01s ease-in;
+}
+.nav a:hover{
+  color:white;
+}
+.me{
+  position:fixed;
+  height:30px;
   width:250px;
   background-color:  #2ecc71  ;
-  transform:rotate(-90deg);
-  left:-100px;
-  top:100px;
-  font-size:17px;
+  transform:rotate(0deg);
+  left:0px;
+  top:45px;
+  font-size:15px;
   font-family:"Oswald";
-  padding:10px 10px;
-  border-radius:5px 5px 50px 50px;
+  padding:3px 5px;
+  border-radius:5px 5px 100px 100px;
   color:white;
 }
 #main{
@@ -34,7 +65,7 @@ body{
   position:absolute;
   left:0;
   right:0;
-  top:300px;
+  top:40vh;
   
 }
 .hide{
@@ -53,7 +84,7 @@ h1{
   background-color: #3498db;
   position:fixed;
   right:40px;
-  top:40px;
+  top:20px;
   color:white;
   display:block;  
   box-shadow: 0 6px 5px   #cacfd2  ;
@@ -137,19 +168,17 @@ h1{
     border-radius:60px;
     text-align:center;
   }
-  
+  .nav ul{
+    display:none;
+  }
   .me{
-  position:absolute;
-  height:35px;
+  height:25px;
   width:150px;
-  left:-60px;
-  top:60px;
   font-size:10px;
-  padding:10px 10px;
+  padding:5px 10px;
   }
   .mynotes{
-    width:200px;
-    
+    width:200px;    
   }
   .tape{
     width:35px;
