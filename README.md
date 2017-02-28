@@ -26,6 +26,8 @@ A few points to note :::
 
 7) The navigation menu is for informative purposes only. Since there is no backend methodoogy involved, the navigation menu links have not been updated.
 
+8) Works best on Firefox and Chrome.
+
 To Download this project on your system, just click on the "Clone or Download" option and then "Download as a zip". 
 Then you can open the index.html file directly in your browser to open the app.
 
