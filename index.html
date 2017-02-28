@@ -7,7 +7,7 @@
   
   <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
 
-      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="css/style.css">
 
   
 </head>
@@ -19,8 +19,7 @@
 <div class="well" id="main">
   
   <a href="#"><div class="add btn" v-on:click="newNote()"><b>+</b></div></a>
-  <div class="hidden"><b>Add a new note</b></div>
-  <div class="triangle"></div>
+  
   <!-- To display message when there are no notes -->
   
   <div class="empty text-center" v-bind:class="{'hide':isempty}">
@@ -55,7 +54,7 @@
   <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
 
-    <script src="index.js"></script>
+    <script src="js/index.js"></script>
 
 </body>
 </html>
