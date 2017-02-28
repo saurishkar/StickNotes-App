@@ -7,7 +7,7 @@
   
   <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
 
-      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="css/style.css">
 
   
 </head>
@@ -15,6 +15,21 @@
 <body>
   <meta name="viewport" width="device-width" intial-scale="1.0">
 <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+
+<!-- Navigation Bar -->
+
+<div class="nav">
+  <h2> #StickNotes </h2>
+    
+  <ul>
+    <a href="#"><li>Home</li></a>
+    <a href="#"><li>Archived</li></a>
+  </ul>   
+
+</div>
+
+<!-- Navigation Bar ends -->
+
 <div class="me text-center">Made by <span style="color:black">Saurish</span> + <span style="color:#117a65">Green Tea</span></div>
 <div class="well" id="main">
   
@@ -33,6 +48,7 @@
     <div class="col-sm-3" v-for="(note,index) in notes">
   <div class="mynotes">
     <div class="tape"> </div>
+    <div class="btn archive" v-on:click="archiveNote(index)"><a href="#" style="text-decoration:none;color:#8e44ad"><i>Arc</i></a></div>
     <div class="btn delete" v-on:click="deleteNote(index)"><a href="#" style="text-decoration:none;color:red"><b>X</b></a></div>    
     <div class="title"><textarea type="text" placeholder="Title goes here" v-model="note.title">{{note.title}}</textarea></div>
     <br>
@@ -54,7 +70,7 @@
   <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
 
-    <script src="index.js"></script>
+    <script src="js/index.js"></script>
 
 </body>
 </html>

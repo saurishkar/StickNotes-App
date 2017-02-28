@@ -4,7 +4,8 @@
   data:{
     
     note:{"title":"","message":""},
-    notes:[]
+    notes:[],
+    archived:[]
   },
   computed:{
     // To check whether there are any noets created 
@@ -39,6 +40,11 @@
       //console.log(this.notes);
       if(confirm("This will DELETE the note, Are you sure?"))
       this.notes.splice(index,1);      
+    },
+    archiveNote:function(index){
+      this.archived.push(this.notes.slice(index,index+1));
+      //console.log("archived");
+      //console.log(this.archived);
     }
   }
 });
