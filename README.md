@@ -22,7 +22,9 @@ A few points to note :::
 
 5) Please make sure that the .js and .css files are in the same location as the index.html while you download and extract the files.
 
-6) Supported for Chrome, Safari, Opera, Firefox, IE. Also supported for mobile devices.
+6) X => Delete the note , Arc => Archive the note.
+
+7) The navigation menu is for informative purposes only. Since there is no backend methodoogy involved, the navigation menu links have not been updated.
 
 
 Have a look at the working of the app using the link here => http://codepen.io/saurish/full/MpgWrV/
