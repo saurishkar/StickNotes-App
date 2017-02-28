@@ -42,9 +42,14 @@
       this.notes.splice(index,1);      
     },
     archiveNote:function(index){
+     // done to archive a note
       this.archived.push(this.notes.slice(index,index+1));
+      // this is done to remove the archive note from the current view
+      this.notes.splice(index,1);
+      confirm("This note has been archived !!");
       //console.log("archived");
-      //console.log(this.archived);
+      console.log(this.archived);
+      console.log(this.notes);
     }
   }
 });
